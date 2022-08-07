@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Compra tus bebidas favoritas desde la comodidad de tu casa y nosotros te lo llevamos!">
+  <meta name="keywords"
+    content="moscato, moscato vinoteca, delivery de bebidas, vinoteca en cordoba, tienda de vinos, vineria en cordoba, vineria con delivery, gin, vodka, fernet, whisky, vinos, campari, smirnoff, sky, branca, espumantes, cristaleria, copones de gin, copas de vino">
+  <title>Moscato Vinoteca | Cada sorbo tiene una historia</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/moscato_main.css">
+  <link rel="icon" type="imagen" href="imagenes/favicon.png" />
+
+</head>
+
+<body id="html">
+  <nav class="navbar navbar-dark sticky-top navbar-expand-lg nav__bgcolor nav__style">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="imagenes/logo_moscato.svg" alt="" class="logo__style">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon boton__hamburguesa"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 mr-lg-2">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="vinos.html">Vinos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cervezas.html">Cervezas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="espirituosas.html">Espirituosas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="espirituosas.html">Ofertas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="espirituosas.html">Extras</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Busca tu bebida" aria-label="Search">
+          <button class="btn nav__buscador" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Ends nav -->
+  <aside class="aside__style">
+    <div class="card text-bg-dark">
+      <img src="imagenes/aside_img.jpg" class="card-img aside__img" alt="personas brindando">
+      <div class="card-img-overlay">
+        <p class="card-text">Cada sorbo tiene una historia</p>
+      </div>
+    </div>
+  </aside>
+  <section class="section__ofertas">
+    <H2 class="text__white">Ofertas semanales</H2>
+    <div class="ofertas__card--contenedor">
+      <div class="card ofertas__card--size super__oferta">
+        <img src="imagenes/zuccardi_oferta.jpg" class="card-img-top" alt="Bodega zuccardi 15% de descuento">
+        <div class="card-body ofertas__card--bg">
+          <h5 class="card-title text__bold">15% OFF bodega Zuccardi</h5>
+          <p class="card-text text__secondary">Aplica a todas las lineas pagando en efectivo o debito.</p>
+          <a href="#" class="btn btn-dark">Ver productos</a>
+        </div>
+      </div>
+      <div class="card ofertas__card--size">
+        <img src="imagenes/patagonia_oferta.jpg" class="card-img-top" alt="Cerveza patagonia 10% de descuento">
+        <div class="card-body ofertas__card--bg">
+          <h5 class="card-title text__bold">10% OFF en cervezas Patagonias</h5>
+          <p class="card-text text__secondary">Aplica a todas las variedades pagando en efectivo o debito.</p>
+          <a href="#" class="btn btn-dark">Ver productos</a>
+        </div>
+      </div>
+      <div class="card ofertas__card--size super__oferta">
+        <img src="imagenes/johnnie_walker_oferta.png" class="card-img-top"
+          alt="Johnnie walker red label 25% de descuento">
+        <div class="card-body ofertas__card--bg">
+          <h5 class="card-title text__bold">25% OFF JW Red label</h5>
+          <p class="card-text text__secondary">Aplica a las presentaciones de 750cc y 1lt</p>
+          <a href="#" class="btn btn-dark">Ver productos</a>
+        </div>
+      </div>
+      <div class="card ofertas__card--size">
+        <img src="imagenes/havana_oferta.png" class="card-img-top"
+          alt="Compra ron havana dorado y te regalamos todo para tomar un cuba libre!">
+        <div class="card-body ofertas__card--bg">
+          <h5 class="card-title text__bold">Cuba libre!</h5>
+          <p class="card-text text__secondary">Llevate un Havana club dorado y te regalamos todo para tomar un cuba
+            libre.</p>
+          <a href="#" class="btn btn-dark">Ver productos</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Termina ofertas -->
+
+  <!-- Empieza recomendados -->
+
+  <section class="section__ofertas">
+    <H2 class="text__white">Nuestros recomendados</H2>
+    <div class="reco__contenedor">
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner my-2">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="imagenes/fernetbuhero.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="reco__h5">Una apuesta innovadora, reinventando el sabor del fernet. Sin dudas uno de
+                nuestros favoritos.</h5>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="imagenes/aconcagua_recomendado.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="reco__h5">Directo desde la patagonia argentina, elaborado con los mejores botanicos y agua de
+                deshielo nos trae un sabor unico.</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/sheridans_recomendado.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="reco__h5">De un lado de cafe irlandes y del otro licor de chocolate blanco, el equilibrio
+                perfecto.</h5>
+
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Volver</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+<div class="linea">
+</div>
+
+<!--Empieza footer-->
+
+<footer class="footer__style">
+  <div class="footer__nosotros">
+    <h6>Sobre nosotros</h6>
+    <p>Somos una vinoteca ubicada en Córdoba capital. Nacimos en noviembre del año 2015 con el objetivo de satisfacer
+      las necesidades de nuestros clientes. Brindamos una atención personalizada y es lo que nos distingue del resto,
+      mejorando todos los días porque creemos que cada sorbo tiene una historia.</p>
+    <p>Av Lascano Colodrero 2765. Cordoba, Argentina.</p>
+  </div>
+  <div class="footer__siguenos">
+    <h6>Siguenos</h6>
+    <div>
+      <a href="https://wa.link/emf33s" target="_blank">
+        <img src="imagenes/whatsapp.svg" alt="Wahtsapp moscato vinoteca">
+      </a>
+      <a href="https://www.instagram.com/moscatovinoteca" target="_blank">
+        <img src="imagenes/instagram.svg" alt="Instagram moscato vinoteca">
+      </a>
+    </div>
+  </div>
+
+</footer>
+<div class="derechos__reservados linea">
+  <small>&copy; 2022 <b>Moscato vinoteca</b> - Todos los Derechos Reservados.</small>
+</div>
+
+</html>

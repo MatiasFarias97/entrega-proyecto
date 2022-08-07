@@ -1,0 +1,568 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Roboto+Condensed&display=swap");
+#html {
+  background-color: #000000;
+  font-size: font-size 62.5%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+  background-image: url(../imagenes/bg_body.svg);
+  background-size: 100%;
+}
+
+.text__white {
+  color: #f7f3f3;
+}
+
+.logo__style {
+  width: 100%;
+}
+
+.nav__bgcolor {
+  background-color: rgba(0, 0, 0, 0.7411764706);
+  width: 100%;
+}
+
+.nav__style {
+  height: 10vh;
+}
+.nav__style a {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+  list-style: none;
+}
+.nav__style button {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5rem;
+  transition: 0.5s;
+  color: white;
+}
+.nav__style ul {
+  background-color: rgb(118, 116, 116);
+  padding-left: 10px;
+  border-radius: 5px;
+}
+
+.boton__hamburguesa {
+  background-image: url(../imagenes/boton_hamburguesa.svg);
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.nav__ul--style {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  flex-wrap: nowrap;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  margin-left: 10px;
+  width: 85%;
+}
+
+.nav__buscador {
+  font-weight: 300;
+  border-radius: 2px;
+}
+
+/* Termina nav*/
+/* breakpoint*/
+@media (min-width: 768px) {
+  .logo__style {
+    width: 100%;
+    height: 8vh;
+  }
+  .nav__ul--style {
+    padding-left: 15px;
+  }
+  .boton__hamburguesa {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-right: 15px;
+  }
+}
+@media (min-width: 992px) {
+  .logo__style {
+    width: 97%;
+  }
+  .nav__style {
+    height: 15vh;
+  }
+  .nav__style a {
+    font-size: 1.4rem;
+    font-weight: 300;
+  }
+  .nav__style button {
+    border: solid white;
+    border-radius: 3px;
+  }
+  .nav__style ul {
+    background-color: transparent;
+  }
+}
+@media (min-width: 1400px) {
+  .logo__style {
+    width: 450px;
+    margin-right: 20px;
+  }
+  .nav__style {
+    height: 20vh;
+  }
+}
+/*Empieza aside + ofertas + recomendados */
+.aside__style {
+  width: 85%;
+  font-size: 1.2rem;
+  margin: 10px auto;
+}
+.aside__style p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  text-shadow: 0px -7px 10px rgba(0, 0, 0, 0.83);
+}
+
+.aside__img {
+  width: 100%;
+}
+
+h2,
+h3 {
+  font-size: 2rem;
+  text-align: center;
+  padding: 5px;
+  width: 100%;
+  margin: auto;
+  text-shadow: -9px 4px 10px rgba(255, 247, 247, 0.83);
+}
+
+.section__ofertas {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+.ofertas__card--size {
+  width: 40%;
+  margin: 5px;
+}
+
+.text__bold {
+  font-weight: bold;
+}
+
+.text__secondary {
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+
+.ofertas__card--contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 10px 2px;
+}
+
+.ofertas__card--bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.3607843137), rgba(255, 255, 255, 0.8784313725));
+}
+
+.reco__h5 {
+  background-color: rgba(229, 225, 225, 0.8705882353);
+  font-size: 1.3rem;
+  padding: 3px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.reco__contenedor {
+  width: 70%;
+  margin: auto;
+}
+
+/*Termina index*/
+/* Breakpoint */
+@media (min-width: 768px) {
+  .aside__style {
+    width: 70%;
+  }
+  .aside__style p {
+    font-size: 3rem;
+    margin-top: 50px;
+  }
+  h2, h3 {
+    font-size: 2.3rem;
+    padding-bottom: 10px;
+  }
+  .ofertas__card--size {
+    width: 30%;
+  }
+  .text__bold {
+    font-size: 1.4rem;
+  }
+  .text__secondary {
+    font-size: 1.2rem;
+  }
+  .reco__contenedor {
+    width: 60%;
+  }
+}
+@media (min-width: 992px) {
+  .aside__img {
+    width: 100%;
+  }
+  .ofertas__card--size {
+    width: 30%;
+  }
+  .aside__style {
+    width: 50%;
+  }
+  .aside__style p {
+    margin-top: 30px;
+  }
+}
+@media (min-width: 1100px) {
+  .section__ofertas--img {
+    width: 15%;
+    height: 20%;
+  }
+  .aside__img {
+    width: 100%;
+    height: 800px;
+  }
+  .reco__contenedor {
+    width: 40%;
+  }
+  .ofertas__card--size {
+    width: 20%;
+  }
+  .aside__style {
+    width: 60%;
+  }
+}
+@media (min-width: 1300px) {
+  .aside__img {
+    height: 1000px;
+  }
+  .section__ofertas--img {
+    margin: 10px;
+    width: 13%;
+    height: 15%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+@media (min-width: 1400px) {
+  .ofertas__card--size {
+    width: 18%;
+  }
+}
+/* Empieza productos de toda la pagina*/
+h1 {
+  background-color: #007E8C;
+  font-size: 2rem;
+  text-align: start;
+  padding: 10px 5px 5px 15px;
+  width: 100%;
+}
+
+h4 {
+  font-size: 1.3rem;
+}
+
+.bg__secondnav {
+  background-color: rgba(255, 254, 254, 0.7843137255);
+}
+
+.bg__secondnav--label {
+  background-color: rgba(33, 33, 33, 0.0901960784);
+}
+
+.boton__filtros {
+  display: flex;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  padding: 5px 10px;
+  background-color: rgba(224, 209, 209, 0.9450980392);
+}
+.boton__filtros:hover {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3607843137), rgba(255, 255, 255, 0.8784313725));
+}
+
+.p-4 label {
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+.header__font {
+  font-family: "Oswald", sans-serif;
+}
+
+.contenedor__vinos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card__productos {
+  width: 45%;
+  margin: 5px auto;
+  padding: 5px;
+  background: rgba(255, 254, 254, 0.7019607843);
+}
+
+h5 {
+  font-weight: 400;
+}
+
+.contenedor__vinos div h5, .contenedor__vinos div p {
+  margin: auto;
+  text-align: center;
+}
+
+.contenedor__vinos div p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.filtros__1400px {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2rem;
+    padding-left: 15px;
+  }
+  .card__productos {
+    width: 32%;
+  }
+}
+@media (min-width: 992px) {
+  .bg_secondnav div {
+    font-size: 1.8rem;
+    padding-top: 10px;
+  }
+  h1 {
+    padding-bottom: 10px;
+  }
+  .card__productos {
+    width: 27%;
+  }
+}
+@media (min-width: 1400px) {
+  h1 {
+    font-size: 2.4rem;
+  }
+  .card__productos {
+    width: 26%;
+  }
+  .contenedor__vinos div p {
+    font-size: 1.2rem;
+  }
+  .filtros__1400px {
+    display: block;
+    padding: 5px 10px;
+    font-size: 1.3rem;
+    margin: 10px;
+    background-color: rgba(224, 209, 209, 0.9450980392);
+  }
+  .filtros__1400px label {
+    margin: 15px;
+  }
+  .filtros__ocultar {
+    display: none;
+  }
+  .grid__contenedor---body {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-areas: "filtros productos";
+  }
+  .grid__area--filtros {
+    grid-area: filtros;
+  }
+  .grid__area--productos {
+    grid-area: productos;
+  }
+}
+/* Empieza footer*/
+.linea {
+  border-top: 2px solid white;
+  height: 2px;
+  max-width: 250px;
+  padding: 0;
+  margin: 20px auto 0 auto;
+}
+
+.footer__style {
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 30px auto 0px auto;
+}
+.footer__style h6 {
+  color: #f7f3f3;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.footer__style p {
+  color: #efefef;
+  margin-bottom: 10px;
+  font-weight: 300;
+  padding-left: 10px;
+}
+.footer__style div {
+  margin: 5px;
+}
+.footer__style div a {
+  text-decoration: none;
+  display: inline-block;
+  width: 52px;
+  height: 52px;
+}
+.footer__style div a img {
+  width: 100%;
+  height: 100%;
+  line-height: 45px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.derechos__reservados {
+  color: #f7f3f3;
+  text-align: center;
+  margin-top: 5px;
+}
+.derechos__reservados small {
+  padding-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .pie-pagina p {
+    padding-left: 15px;
+    text-align: center;
+  }
+  .linea {
+    max-width: 400px;
+  }
+}
+@media (min-width: 1100px) {
+  .footer__style {
+    flex-wrap: nowrap;
+    align-items: flex-start;
+  }
+  .footer__style .footer__nosotros {
+    width: 45%;
+  }
+  .footer__style .footer__siguenos {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer__style p {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1400px) {
+  .linea {
+    max-width: 600px;
+  }
+  .footer__style {
+    justify-content: center;
+  }
+}
+/* Contacto */
+.container__flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.form {
+  width: 90%;
+  max-width: 400px;
+  border-radius: 1em;
+  padding: 2em 1.5em;
+  margin: auto;
+  background-color: rgba(224, 209, 209, 0.9450980392);
+}
+
+.form__container {
+  width: 100%;
+  display: grid;
+  gap: 1em;
+  grid-auto-columns: 100%;
+}
+
+.form__input {
+  font-size: 1rem;
+  padding: 0.8em 1em;
+}
+
+.form__input--texto {
+  resize: none;
+  padding: 1.8em 1em;
+  margin-bottom: 0.5em;
+}
+
+.btn__sumbit {
+  border: none;
+  font-size: 1rem;
+  padding: 0.7em 0;
+  cursor: pointer;
+  border-radius: 0.2em;
+}
+
+.section__mapa {
+  margin: 10px auto;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 1em;
+  padding: 2em 1.5em;
+  background-color: rgba(224, 209, 209, 0.9450980392);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section__mapa h2 {
+  margin: 10px auto;
+  text-align: center;
+}
+.section__mapa iframe {
+  padding: 0px 10px;
+}
+
+@media (min-width: 992px) {
+  .section__mapa {
+    height: 56vh;
+    padding-bottom: 10px;
+    justify-content: space-around;
+  }
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (min-width: 1100px) {
+  .container__flex {
+    flex-direction: row;
+    margin-bottom: 200px;
+  }
+  .form {
+    width: 50%;
+  }
+  .section__mapa {
+    width: 50%;
+  }
+}
+
+/*# sourceMappingURL=moscato_main.css.map */

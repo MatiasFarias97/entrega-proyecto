@@ -1,0 +1,60 @@
+//vars globales
+
+//vars font
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Roboto+Condensed&display=swap');
+$text__bold:bold;
+$font__titulos: 2rem;
+$general__size--font: font-size 62.5%;
+
+//vars color
+$card__ofertas--color:linear-gradient(#0000005c, #ffffffe0);;
+$text__white: #f7f3f3;
+$text__reco--carrusel:#e5e1e1de;
+$filtros__color--label: #21212117;
+$filtros__boton:#e0d1d1f1;
+$filtros__boton--hover: linear-gradient( 180deg,#0000005c, #ffffffe0);
+$card__productos--color:#fffefeb3;
+$h1__bgcolor:#007E8C;
+$bg__body: #000000;
+$bg__filtros: #fffefec8;
+$bg__aside:#bfbd49a9; 
+$bg__productos: #e5e1e1de;
+$bg__nav-footer:#000000bd;
+//map
+
+//mixin
+@mixin medias($breakpoint){
+    @if $breakpoint == 768px {
+        @media (min-width: 768px){
+            @content;
+        }
+    }
+    @if $breakpoint == 992px{
+        @media (min-width: 992px){
+            @content;
+        }
+    }
+    @if $breakpoint == 1100px{
+        @media (min-width: 1100px){
+            @content;
+        }
+    }
+    @if $breakpoint == 1300px{
+        @media (min-width: 1300px){
+            @content;
+        }
+    }
+    @if $breakpoint == 1400px{
+        @media (min-width: 1400px){
+            @content;
+        }
+    }
+}
+
+@mixin titulos ($bgcolor, $font-size, $text-aling, $padding){
+    background-color: $bgcolor;
+    font-size: $font-size;
+    text-align: $text-aling;
+    padding: $padding;
+    width: 100%;
+}

@@ -1,0 +1,24 @@
+{
+  "name": "proyecto_moscato_sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass",
+    "sass:watch": "sass --watch scss/main_moscato_style.scss css/moscato_main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatiasFarias97/Desafio-boostrap.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MatiasFarias97/Desafio-boostrap/issues"
+  },
+  "homepage": "https://github.com/MatiasFarias97/Desafio-boostrap#readme",
+  "dependencies": {
+    "sass": "^1.53.0"
+  }
+}

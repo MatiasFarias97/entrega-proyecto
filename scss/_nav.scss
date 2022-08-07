@@ -1,0 +1,126 @@
+#html {
+   background-color: $bg__body; 
+   font-size: $general__size--font;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-family: 'Oswald', sans-serif;
+   background-image: url(../imagenes/bg_body.svg);
+   background-size: 100%;
+
+}
+.text__white {
+    color: $text__white;
+}
+.logo__style {
+    width: 100%;
+    
+}
+.nav__bgcolor{
+    background-color: $bg__nav-footer;
+    width: 100%;
+}
+.nav__style{
+    height: 10vh;
+    a{ font-size: 1.5rem;
+        color: white;
+        font-weight: 400;
+        text-decoration: none;
+        list-style: none;
+    }
+    button{ 
+        font-family: 'Oswald', sans-serif;
+        font-size: 1.5rem;
+        transition: 0.5s;
+        color: white;
+    }
+    ul{
+        background-color: rgb(118, 116, 116);
+        padding-left: 10px;
+        border-radius: 5px;
+    }
+
+}
+.boton__hamburguesa{
+    background-image: url(../imagenes/boton_hamburguesa.svg);
+    width: 1.5em;
+    height: 1.5em;
+
+}
+.nav__ul--style{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    flex-wrap: nowrap;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    margin-left: 10px;
+    width: 85%;
+
+}
+.nav__buscador {
+    font-weight: 300;
+    border-radius: 2px;
+}
+
+/* Termina nav*/
+
+/* breakpoint*/
+
+@include medias (768px){
+    .logo__style{
+        width: 100%;
+        height: 8vh;
+    }
+
+    .nav__ul--style {
+        padding-left: 15px;
+    }
+
+    .boton__hamburguesa{
+        width: 3.5rem;
+        height: 3.5rem;
+        margin-right: 15px;
+    }
+
+}
+
+@include medias (992px){
+    .logo__style {
+        width: 97%;
+    }
+
+    .nav__style{
+        height: 15vh;
+        a{ 
+            font-size: 1.4rem;
+            font-weight: 300;
+        }
+        button{
+            border:solid white;
+            border-radius: 3px;
+        }
+        ul{
+            background-color: transparent;
+
+        }
+    }
+
+}
+
+@include medias(1400px){
+    .logo__style {
+        width: 450px;
+        margin-right: 20px;
+    }
+
+    .nav__style{
+        height: 20vh;
+        
+    }
+
+
+}
+
