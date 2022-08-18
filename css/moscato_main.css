@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Roboto+Condensed&display=swap");
-#html {
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+.html {
   background-color: #000000;
   font-size: font-size 62.5%;
   box-sizing: border-box;
@@ -23,15 +24,16 @@
   width: 100%;
 }
 
-.nav__style {
-  height: 10vh;
-}
 .nav__style a {
   font-size: 1.5rem;
   color: white;
   font-weight: 400;
   text-decoration: none;
   list-style: none;
+  transform: 0.5seg;
+}
+.nav__style a:hover {
+  transform: scale(1.2);
 }
 .nav__style button {
   font-family: "Oswald", sans-serif;
@@ -118,16 +120,20 @@
   width: 85%;
   font-size: 1.2rem;
   margin: 10px auto;
+  background-image: url(../imagenes/aside_img.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 35vh;
+  border-radius: 5px;
 }
 .aside__style p {
   text-align: center;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.2rem;
   text-shadow: 0px -7px 10px rgba(0, 0, 0, 0.83);
-}
-
-.aside__img {
-  width: 100%;
+  color: #f7f3f3;
+  text-shadow: -3px 2px 1px rgba(0, 0, 0, 0.46);
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 h2,
@@ -181,18 +187,42 @@ h3 {
 
 .reco__contenedor {
   width: 70%;
-  margin: auto;
+  margin: 10px auto;
+  border-radius: 35px 35px 35px 0px;
+  -webkit-border-radius: 35px 35px 35px 0px;
+  -moz-border-radius: 35px 35px 35px 0px;
+  border: 8px outset #007e8c;
+}
+.reco__contenedor img {
+  padding: 10px;
+}
+
+.error404 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5px auto;
+  width: 80%;
+}
+.error404 p {
+  font-size: 2rem;
+  text-shadow: -9px 4px 10px rgba(0, 0, 0, 0.83);
+}
+.error404 img {
+  width: 100%;
 }
 
 /*Termina index*/
 /* Breakpoint */
 @media (min-width: 768px) {
   .aside__style {
-    width: 70%;
+    width: 80%;
+    height: 60vh;
   }
   .aside__style p {
-    font-size: 3rem;
-    margin-top: 50px;
+    font-size: 2rem;
+    margin-top: 30px;
   }
   h2, h3 {
     font-size: 2.3rem;
@@ -210,19 +240,26 @@ h3 {
   .reco__contenedor {
     width: 60%;
   }
+  .error404 img {
+    width: 90%;
+  }
 }
 @media (min-width: 992px) {
-  .aside__img {
-    width: 100%;
-  }
   .ofertas__card--size {
     width: 30%;
   }
   .aside__style {
-    width: 50%;
+    height: 40vh;
   }
   .aside__style p {
+    font-size: 2.3rem;
     margin-top: 30px;
+  }
+  .error404 {
+    width: 65%;
+  }
+  .error404 p {
+    font-size: 2.3rem;
   }
 }
 @media (min-width: 1100px) {
@@ -230,9 +267,8 @@ h3 {
     width: 15%;
     height: 20%;
   }
-  .aside__img {
-    width: 100%;
-    height: 800px;
+  .aside__style {
+    height: 50vh;
   }
   .reco__contenedor {
     width: 40%;
@@ -240,13 +276,13 @@ h3 {
   .ofertas__card--size {
     width: 20%;
   }
-  .aside__style {
-    width: 60%;
+  .error404 {
+    width: 55%;
   }
 }
 @media (min-width: 1300px) {
-  .aside__img {
-    height: 1000px;
+  .aside__style {
+    height: 55vh;
   }
   .section__ofertas--img {
     margin: 10px;
@@ -255,10 +291,33 @@ h3 {
     padding-top: 10px;
     padding-bottom: 10px;
   }
+  .error404 {
+    background-image: url(../imagenes/error404.jpg);
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    justify-content: flex-start;
+    width: 65%;
+  }
+  .error404 img {
+    display: none;
+  }
+  .error404 p {
+    padding: 10px;
+    text-shadow: -3px 2px 1px rgba(0, 0, 0, 0.46);
+  }
 }
 @media (min-width: 1400px) {
   .ofertas__card--size {
     width: 18%;
+  }
+  .error404 {
+    width: 70%;
+    height: 78vh;
+  }
+  .aside__style {
+    width: 75%;
+    height: 60vh;
   }
 }
 /* Empieza productos de toda la pagina*/
@@ -302,7 +361,7 @@ h4 {
   font-family: "Oswald", sans-serif;
 }
 
-.contenedor__vinos {
+.contenedor__articulos {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -311,26 +370,32 @@ h4 {
 .card__productos {
   width: 45%;
   margin: 5px auto;
-  padding: 5px;
+  padding: 10px;
   background: rgba(255, 254, 254, 0.7019607843);
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.75);
 }
 
 h5 {
   font-weight: 400;
 }
 
-.contenedor__vinos div h5, .contenedor__vinos div p {
+.contenedor__articulos div h5, .contenedor__articulos div p {
   margin: auto;
   text-align: center;
 }
 
-.contenedor__vinos div p {
+.contenedor__articulos div p {
   font-size: 1rem;
   font-weight: 300;
 }
 
 .filtros__1400px {
   display: none;
+}
+.filtros__1400px label {
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
@@ -359,9 +424,12 @@ h5 {
     font-size: 2.4rem;
   }
   .card__productos {
-    width: 26%;
+    width: 23%;
   }
-  .contenedor__vinos div p {
+  .contenedor__articulos {
+    column-gap: 5px;
+  }
+  .contenedor__articulos div p {
     font-size: 1.2rem;
   }
   .filtros__1400px {
@@ -398,50 +466,60 @@ h5 {
   margin: 20px auto 0 auto;
 }
 
-.footer__style {
-  width: 90%;
+.footer__content {
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin: 30px auto 0px auto;
-}
-.footer__style h6 {
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
   color: #f7f3f3;
-  font-size: 1.2rem;
-  text-align: center;
+  padding-top: 40px;
 }
-.footer__style p {
-  color: #efefef;
-  margin-bottom: 10px;
-  font-weight: 300;
-  padding-left: 10px;
+.footer__content h6 {
+  font-size: 1.8rem;
+  text-shadow: -3px 2px 1px rgba(0, 0, 0, 0.46);
+  line-height: 3rem;
 }
-.footer__style div {
-  margin: 5px;
+.footer__content p {
+  max-width: 500px;
+  text-shadow: -3px 2px 1px rgba(0, 0, 0, 0.46);
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 1rem;
+  padding: 5px;
 }
-.footer__style div a {
-  text-decoration: none;
-  display: inline-block;
-  width: 52px;
-  height: 52px;
-}
-.footer__style div a img {
-  width: 100%;
-  height: 100%;
-  line-height: 45px;
-  margin-right: 10px;
-  text-align: center;
+.footer__content img {
+  width: 70px;
+  height: 70px;
 }
 
-.derechos__reservados {
-  color: #f7f3f3;
-  text-align: center;
-  margin-top: 5px;
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px auto;
 }
-.derechos__reservados small {
-  padding-bottom: 10px;
+.socials li {
+  margin: 2px auto;
+}
+.socials a {
+  text-decoration: none;
+  transition: 0.5s;
+}
+.socials a img:hover {
+  transform: scale(1.2);
+}
+
+.footer__copyright {
+  width: 100%;
+  text-align: center;
+  color: #f7f3f3;
+}
+.footer__copyright p {
+  font-size: 1rem;
+  word-spacing: 2px;
+  text-shadow: -3px 2px 1px rgba(0, 0, 0, 0.46);
 }
 
 @media (min-width: 768px) {
@@ -559,9 +637,19 @@ h5 {
   }
   .form {
     width: 50%;
+    height: 70vh;
   }
   .section__mapa {
     width: 50%;
+    height: 70vh;
+  }
+}
+@media (min-width: 1400px) {
+  .form {
+    height: 60vh;
+  }
+  .section__mapa {
+    height: 60vh;
   }
 }
 

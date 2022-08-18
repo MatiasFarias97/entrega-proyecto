@@ -80,10 +80,22 @@
 
     .form{
         width: 50%;
+        height: 70vh;
     }
 
     .section__mapa{
-        width: 50%;    
+        width: 50%; 
+        height: 70vh;   
+    }
+}
+
+@include medias (1400px){
+    .form{
+        height: 60vh;
+    }
+
+    .section__mapa{
+        height: 60vh;
     }
 }
 

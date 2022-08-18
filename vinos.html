@@ -14,54 +14,51 @@
     <link rel="icon" type="imagen" href="imagenes/favicon.png" />
 </head>
 
-<header>
-
-    <body id="html">
-        <nav class="navbar navbar-dark sticky-top navbar-expand-lg nav__bgcolor nav__style">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
-                    <img src="imagenes/logo_moscato.svg" alt="" class="logo__style">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon boton__hamburguesa"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 mr-lg-2">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="vinos.html">Vinos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="cervezas.html">Cervezas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="espirituosas.html">Espirituosas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="ofertas.html">Ofertas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Extras</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Busca tu bebida"
-                            aria-label="Search">
-                        <button class="btn nav__buscador" type="submit">Buscar</button>
-                    </form>
-                </div>
+<header class="sticky-top">
+    <nav class="navbar navbar-dark navbar-expand-lg nav__bgcolor nav__style">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="imagenes/logo_moscato.svg" alt="" class="logo__style">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon boton__hamburguesa"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mr-lg-2">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="vinos.html">Vinos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cervezas.html">Cervezas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="espirituosas.html">Espirituosas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ofertas.html">Ofertas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="extras.html">Extras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Busca tu bebida" aria-label="Search">
+                    <button class="btn nav__buscador" type="submit">Buscar</button>
+                </form>
             </div>
-        </nav>
+        </div>
+    </nav>
 </header>
 <!-- Ends nav -->
 
 <!-- Filtros -->
 
-<body id="html">
+<body class="html">
     <h1 class="text__white">Vinos</h1>
     <div class="grid__contenedor---body">
         <section class="collapse row" id="navbarToggleExternalContent">
@@ -132,61 +129,65 @@
 
         <!-- Termina filtros -->
 
-        <section class="contenedor__vinos container-fluid grid__area--productos">
+        <section class="contenedor__articulos container-fluid grid__area--productos">
             <article class="card card__productos">
-                <img src="imagenes/la_linda_malbec.jpg" class="card-img-top" alt="Vino la linda malbec $1100">
+                <img src="imagenes/luigibosca_malbec.webp" class="card-img-top" alt="Luigi bosca malbec 750ml $2300">
                 <div class="card-body">
-                    <h5 class="card-title">La linda malbec</h5>
-                    <p class="card-text mt-2">$1100</p>
+                    <h5 class="card-title">Luigi Bosca malbec 750ml</h5>
+                    <p class="card-text mt-2">$2300</p>
                 </div>
             </article>
             <article class="card card__productos">
-                <img src="imagenes/la_linda_malbec.jpg" class="card-img-top" alt="Vino la linda malbec $1100">
+                <img src="imagenes/trapiche_sauvblanc.webp" class="card-img-top"
+                    alt="Trapiche sauvignon blanc 750ml $1290">
                 <div class="card-body">
-                    <h5 class="card-title">La linda malbec</h5>
-                    <p class="card-text mt-2">$1100</p>
+                    <h5 class="card-title">Trapiche sauvignon blanc 750ml</h5>
+                    <p class="card-text mt-2">$1290</p>
                 </div>
             </article>
             <article class="card card__productos">
-                <img src="imagenes/la_linda_malbec.jpg" class="card-img-top" alt="Vino la linda malbec $1100">
+                <img src="imagenes/trapiche_reserva_chardonay.webp" class="card-img-top"
+                    alt="Trapiche reserva chardonay 750ml $990">
                 <div class="card-body">
-                    <h5 class="card-title">La linda malbec</h5>
-                    <p class="card-text mt-2">$1100</p>
+                    <h5 class="card-title">Trapiche reserva chardonay 750ml</h5>
+                    <p class="card-text mt-2">$990</p>
                 </div>
             </article>
             <article class="card card__productos">
-                <img src="imagenes/la_linda_malbec.jpg" class="card-img-top" alt="Vino la linda malbec $1100">
+                <img src="imagenes/luigibosca_cabsauvignon.webp " class="card-img-top"
+                    alt="Luigi bosca cabernet sauvignon 750ml $2300">
                 <div class="card-body">
-                    <h5 class="card-title">La linda malbec</h5>
-                    <p class="card-text mt-2">$1100</p>
+                    <h5 class="card-title">Luigi bosca cabernet sauvignon 750ml</h5>
+                    <p class="card-text mt-2">$2300</p>
                 </div>
             </article>
             <article class="card card__productos">
-                <img src="imagenes/la_linda_malbec.jpg" class="card-img-top" alt="Vino la linda malbec $1100">
+                <img src="imagenes/astica_merlot.webp" class="card-img-top" alt="Astica merlot 750ml$1300">
                 <div class="card-body">
-                    <h5 class="card-title">La linda malbec</h5>
-                    <p class="card-text mt-2">$1100</p>
+                    <h5 class="card-title">Astica merlot 750ml</h5>
+                    <p class="card-text mt-2">$1300</p>
                 </div>
             </article>
             <article class="card card__productos">
-                <img src="imagenes/la_linda_malbec.jpg" class="card-img-top" alt="Vino la linda malbec $1100">
+                <img src="imagenes/chandon_aperitif.webp" class="card-img-top"
+                    alt="Espumante chandon aperitif 750ml $1690">
                 <div class="card-body">
-                    <h5 class="card-title">La linda malbec</h5>
-                    <p class="card-text mt-2">$1100</p>
+                    <h5 class="card-title">Chandon aperitif 750ml</h5>
+                    <p class="card-text mt-2">$1690</p>
                 </div>
             </article>
             <article class="card card__productos">
-                <img src="imagenes/la_linda_malbec.jpg" class="card-img-top" alt="Vino la linda malbec $1100">
+                <img src="imagenes/lalinda_rosado.webp" class="card-img-top" alt="La linda rosé de malbec 750ml $1440">
                 <div class="card-body">
-                    <h5 class="card-title">La linda malbec</h5>
-                    <p class="card-text mt-2">$1100</p>
+                    <h5 class="card-title">La linda rosé</h5>
+                    <p class="card-text mt-2">$1440</p>
                 </div>
             </article>
             <article class="card card__productos">
-                <img src="imagenes/la_linda_malbec.jpg" class="card-img-top" alt="Vino la linda malbec $1100">
+                <img src="imagenes/trumpeter.webp" class="card-img-top" alt="Trumpeter malbec 750ml $1980">
                 <div class="card-body">
-                    <h5 class="card-title">La linda malbec</h5>
-                    <p class="card-text mt-2">$1100</p>
+                    <h5 class="card-title">Trumpeter malbec 750ml</h5>
+                    <p class="card-text mt-2">$1980</p>
                 </div>
             </article>
         </section>
@@ -198,29 +199,29 @@
 
 <!--Empieza footer-->
 
-<footer class="footer__style">
-    <div class="footer__nosotros">
-        <h6>Sobre nosotros</h6>
-        <p>Somos una vinoteca ubicada en Córdoba capital. Nacimos en noviembre del año 2015 con el objetivo de
-            satisfacer las necesidades de nuestros clientes. Brindamos una atención personalizada y es lo que nos
-            distingue del resto, mejorando todos los días porque creemos que cada sorbo tiene una historia.</p>
-        <p>Av Lascano Colodrero 2765. Cordoba, Argentina.</p>
+<footer>
+    <div class="footer__content">
+        <h6>Moscato Vinoteca</h6>
+        <p>
+            Lascano Colodrero 2765, Cordoba, Argentina.
+        </p>
+        <ul class="socials">
+            <li>
+                <a href="https://wa.link/emf33s" target="_blank"> 
+                    <img src="imagenes/whatsapp.svg" alt="Link de whatsapp">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/moscatovinoteca" target="_blank">
+                    <img src="imagenes/instagram.svg" alt="Link de instagram">
+                </a>
+            </li>
+        </ul>
     </div>
-    <div class="footer__siguenos">
-        <h6>Siguenos</h6>
-        <div>
-            <a href="https://wa.link/emf33s" target="_blank">
-                <img src="imagenes/whatsapp.svg" alt="Wahtsapp moscato vinoteca">
-            </a>
-            <a href="https://www.instagram.com/moscatovinoteca" target="_blank">
-                <img src="imagenes/instagram.svg" alt="Instagram moscato vinoteca">
-            </a>
-        </div>
+    <div class="footer__copyright">
+        <p>Copyright &copy;2022 Moscato. Designed by Matias Farias.</p>
     </div>
-
 </footer>
-<div class="derechos__reservados linea">
-    <small>&copy; 2022 <b>Moscato vinoteca</b> - Todos los Derechos Reservados.</small>
-</div>
+
 
 </html>

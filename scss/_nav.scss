@@ -1,4 +1,4 @@
-#html {
+.html {
    background-color: $bg__body; 
    font-size: $general__size--font;
    box-sizing: border-box;
@@ -21,12 +21,15 @@
     width: 100%;
 }
 .nav__style{
-    height: 10vh;
     a{ font-size: 1.5rem;
         color: white;
         font-weight: 400;
         text-decoration: none;
         list-style: none;
+        transform: 0.5seg;
+        &:hover{
+            transform: scale(1.2);
+        }
     }
     button{ 
         font-family: 'Oswald', sans-serif;

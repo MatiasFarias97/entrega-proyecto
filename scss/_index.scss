@@ -4,18 +4,20 @@
     width: 85%;
     font-size: 1.2rem;
     margin: 10px auto;
+    background-image: url(../imagenes/aside_img.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 35vh;
+    border-radius: 5px;
     p{
-        
         text-align: center;
         font-weight: $text__bold;
-        font-size: 2rem;
+        font-size: 1.2rem;
         text-shadow: 0px -7px 10px rgba(0,0,0,0.83);
+        color: $text__white;
+        text-shadow: -3px 2px 1px rgb(0 0 0 / 46%);
+        font-family: 'Roboto Condensed', sans-serif;
     }
-}
-
-.aside__img {
-    width: 100%;
-   
 }
 
 h2,
@@ -69,9 +71,32 @@ h3 {
 
 .reco__contenedor {
     width: 70%;
-    margin: auto;
+    margin: 10px auto;
+    border-radius: 35px 35px 35px 0px;
+    -webkit-border-radius: 35px 35px 35px 0px;
+    -moz-border-radius: 35px 35px 35px 0px;
+    border: 8px outset #007e8c;
+    img{
+        padding: 10px;
+    }
+    
 }
 
+.error404{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px auto;
+    width: 80%;
+    p{
+        font-size: 2rem;
+        text-shadow: -9px 4px 10px rgba(0, 0, 0, 0.83);
+    }
+    img{
+        width: 100%;
+    }
+}
 /*Termina index*/
 
 /* Breakpoint */
@@ -79,10 +104,11 @@ h3 {
 @include medias (768px){
 
     .aside__style{
-        width: 70%;
+        width: 80%;
+        height: 60vh;
         p{
-            font-size: 3rem;
-            margin-top: 50px;
+            font-size: 2rem;
+            margin-top: 30px;
         }
     }
 
@@ -106,24 +132,34 @@ h3 {
     .reco__contenedor {
         width: 60%;
     }
+
+    .error404{
+        img{
+            width: 90%;
+        }
+    }
 }
 
 @include medias (992px){
-    .aside__img {
-        width: 100%;
-    }
 
     .ofertas__card--size {
         width: 30%;
     }
 
     .aside__style{
-        width: 50%;
+        height: 40vh;
         p{
+            font-size: 2.3rem;
             margin-top: 30px;
         }
     }
 
+    .error404{
+        width: 65%;
+        p{
+            font-size: 2.3rem;
+        }
+    }
 }
 
 @include medias (1100px){
@@ -132,9 +168,8 @@ h3 {
         height: 20%;
     }
 
-    .aside__img {
-        width: 100%;
-        height: 800px;
+    .aside__style {
+        height: 50vh;
     }
 
     .reco__contenedor {
@@ -145,15 +180,17 @@ h3 {
         width: 20%;
     }
 
-    .aside__style{
-        width: 60%;
+    .error404{
+        width: 55%;
     }
 }
 
 @include medias (1300px){
-    .aside__img {
-        height: 1000px;
+
+    .aside__style {
+        height: 55vh;
     }
+
     .section__ofertas--img {
         margin: 10px;
         width: 13%;
@@ -161,11 +198,37 @@ h3 {
         padding-top: 10px;
         padding-bottom: 10px;
     }
-}
+
+    .error404{
+        background-image: url(../imagenes/error404.jpg);
+        height: 80vh;
+        background-position: center;
+        background-size: cover;
+        justify-content: flex-start;
+        width: 65%;
+        img{
+            display: none;
+        }
+        p{
+            padding: 10px;
+            text-shadow: -3px 2px 1px rgb(0 0 0 / 46%);
+    }
+        }
+    }
 
 @include medias (1400px){
     .ofertas__card--size {
         width: 18%;
+    }
+
+    .error404{
+        width: 70%;
+        height: 78vh;
+    }
+
+    .aside__style{
+        width: 75%;
+        height: 60vh;
     }
 }
 

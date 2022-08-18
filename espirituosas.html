@@ -15,52 +15,49 @@
     <link rel="icon" type="imagen" href="imagenes/favicon.png" />
 </head>
 
-<header>
-
-    <body id="html">
-        <nav class="navbar navbar-dark sticky-top navbar-expand-lg nav__bgcolor nav__style">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
-                    <img src="imagenes/logo_moscato.svg" alt="" class="logo__style">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon boton__hamburguesa"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 mr-lg-2">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="vinos.html">Vinos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="cervezas.html">Cervezas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="espirituosas.html">Espirituosas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="ofertas.html">Ofertas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Extras</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Busca tu bebida"
-                            aria-label="Search">
-                        <button class="btn nav__buscador" type="submit">Buscar</button>
-                    </form>
-                </div>
+<header class="sticky-top">
+    <nav class="navbar navbar-dark navbar-expand-lg nav__bgcolor nav__style">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="imagenes/logo_moscato.svg" alt="" class="logo__style">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon boton__hamburguesa"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mr-lg-2">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="vinos.html">Vinos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cervezas.html">Cervezas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="espirituosas.html">Espirituosas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ofertas.html">Ofertas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="extras.html">Extras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Busca tu bebida" aria-label="Search">
+                    <button class="btn nav__buscador" type="submit">Buscar</button>
+                </form>
             </div>
-        </nav>
+        </div>
+    </nav>
 </header>
 <!-- Ends nav -->
 
-<body id="html">
+<body class="html">
     <h1 class="text__white">Espirituosas</h1>
     <div class="grid__contenedor---body">
         <section class="collapse row" id="navbarToggleExternalContent">
@@ -133,67 +130,69 @@
             </label>
             <label class="list-group-item">
                 <input class="form-check-input me-1" type="checkbox" value="Tequila">
-                Tequila
+                Vermouth
             </label>
         </div>
 
         <!-- Termina filtros -->
 
-        <section class="contenedor__vinos container-fluid grid__area--productos">
+        <section class="contenedor__articulos container-fluid grid__area--productos">
             <article class="card card__productos">
-                <img src="imagenes/catalogo_espirituosas.png" class="card-img-top" alt="Gin beefeater 750cc">
+                <img src="imagenes/bombay.webp" class="card-img-top" alt="Gin bombay 700ml $5200">
                 <div class="card-body">
-                    <h5 class="card-title">Gin Beefeater 750cc</h5>
-                    <p class="card-text mt-2">$4500</p>
+                    <h5 class="card-title">Bombay 700ml</h5>
+                    <p class="card-text mt-2">$5200</p>
                 </div>
             </article>
             <article class="card card__productos">
-                <img src="imagenes/catalogo_espirituosas.png" class="card-img-top" alt="Gin beefeater 750cc">
+                <img src="imagenes/hendricks.webp" class="card-img-top" alt="Gin hendricks 700ml $7990">
                 <div class="card-body">
-                    <h5 class="card-title">Gin Beefeater 750cc</h5>
-                    <p class="card-text mt-2">$4500</p>
+                    <h5 class="card-title">Hendricks 700ml</h5>
+                    <p class="card-text mt-2">$7990</p>
                 </div>
             </article>
             <article class="card card__productos">
-                <img src="imagenes/catalogo_espirituosas.png" class="card-img-top" alt="Gin beefeater 750cc">
+                <img src="imagenes/greygoose.webp" class="card-img-top" alt="Vodka grey goose 750ml $17800">
                 <div class="card-body">
-                    <h5 class="card-title">Gin Beefeater 750cc</h5>
-                    <p class="card-text mt-2">$4500</p>
+                    <h5 class="card-title">Grey goose 750ml</h5>
+                    <p class="card-text mt-2">$17800</p>
                 </div>
             </article>
             <article class="card card__productos">
-                <img src="imagenes/catalogo_espirituosas.png" class="card-img-top" alt="Gin beefeater 750cc">
+                <img src="imagenes/skyy.webp" class="card-img-top" alt="Vodka skyy 700ml $1450">
                 <div class="card-body">
-                    <h5 class="card-title">Gin Beefeater 750cc</h5>
-                    <p class="card-text mt-2">$4500</p>
+                    <h5 class="card-title">Skyy 700ml</h5>
+                    <p class="card-text mt-2">$1450</p>
                 </div>
             </article>
             <article class="card card__productos">
-                <img src="imagenes/catalogo_espirituosas.png" class="card-img-top" alt="Gin beefeater 750cc">
+                <img src="imagenes/bacardi_cartablanca.webp" class="card-img-top"
+                    alt="Ron bacardi carta blanca 750ml $2400">
                 <div class="card-body">
-                    <h5 class="card-title">Gin Beefeater 750cc</h5>
-                    <p class="card-text mt-2">$4500</p>
+                    <h5 class="card-title">Bacardi carta blanca 750ml</h5>
+                    <p class="card-text mt-2">$2400</p>
                 </div>
             </article>
             <article class="card card__productos">
-                <img src="imagenes/catalogo_espirituosas.png" class="card-img-top" alt="Gin beefeater 750cc">
+                <img src="imagenes/bacardi_cartaoro.webp" class="card-img-top" alt="Ron bacardi carta oro 750ml $2400">
                 <div class="card-body">
-                    <h5 class="card-title">Gin Beefeater 750cc</h5>
-                    <p class="card-text mt-2">$4500</p>
+                    <h5 class="card-title">Bacardi carta oro 750ml</h5>
+                    <p class="card-text mt-2">$2400</p>
                 </div>
             </article>
             <article class="card card__productos">
-                <img src="imagenes/catalogo_espirituosas.png" class="card-img-top" alt="Gin beefeater 750cc">
+                <img src="imagenes/branca.webp" class="card-img-top" alt="Fernet branca 750ml $1420">
                 <div class="card-body">
-                    <h5 class="card-title">Gin Beefeater 750cc</h5>
-                    <p class="card-text mt-2">$4500</p>
+                    <h5 class="card-title">Branca 750ml</h5>
+                    <p class="card-text mt-2">$1420</p>
                 </div>
             </article>
             <article class="card card__productos">
-                <img src="imagenes/catalogo_espirituosas.png" class="card-img-top" alt="Gin beefeater 750cc">
+                <img src="imagenes/jackdaniels_honey.webp" class="card-img-top"
+                    alt="Whisky jack daniels honey 750ml $8600">
                 <div class="card-body">
-                    <h5 class="card-title">Gin Beefeater 750cc</h5>
-                    <p class="card-text mt-2">$4500</p>
+                    <h5 class="card-title">Jack daniels honey</h5>
+                    <p class="card-text mt-2">$8600</p>
                 </div>
             </article>
         </section>
@@ -205,29 +204,29 @@
 
 <!--Empieza footer-->
 
-<footer class="footer__style">
-    <div class="footer__nosotros">
-        <h6>Sobre nosotros</h6>
-        <p>Somos una vinoteca ubicada en Córdoba capital. Nacimos en noviembre del año 2015 con el objetivo de
-            satisfacer las necesidades de nuestros clientes. Brindamos una atención personalizada y es lo que nos
-            distingue del resto, mejorando todos los días porque creemos que cada sorbo tiene una historia.</p>
-        <p>Av Lascano Colodrero 2765. Cordoba, Argentina.</p>
+<footer>
+    <div class="footer__content">
+        <h6>Moscato Vinoteca</h6>
+        <p>
+            Lascano Colodrero 2765, Cordoba, Argentina.
+        </p>
+        <ul class="socials">
+            <li>
+                <a href="https://wa.link/emf33s" target="_blank"> 
+                    <img src="imagenes/whatsapp.svg" alt="Link de whatsapp">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/moscatovinoteca" target="_blank">
+                    <img src="imagenes/instagram.svg" alt="Link de instagram">
+                </a>
+            </li>
+        </ul>
     </div>
-    <div class="footer__siguenos">
-        <h6>Siguenos</h6>
-        <div>
-            <a href="https://wa.link/emf33s" target="_blank">
-                <img src="imagenes/whatsapp.svg" alt="Wahtsapp moscato vinoteca">
-            </a>
-            <a href="https://www.instagram.com/moscatovinoteca" target="_blank">
-                <img src="imagenes/instagram.svg" alt="Instagram moscato vinoteca">
-            </a>
-        </div>
+    <div class="footer__copyright">
+        <p>Copyright &copy;2022 Moscato. Designed by Matias Farias.</p>
     </div>
-
 </footer>
-<div class="derechos__reservados linea">
-    <small>&copy; 2022 <b>Moscato vinoteca</b> - Todos los Derechos Reservados.</small>
-</div>
+
 
 </html>
