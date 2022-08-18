@@ -9,11 +9,12 @@
     background-position: center;
     height: 35vh;
     border-radius: 5px;
-    p{
+
+    p {
         text-align: center;
         font-weight: $text__bold;
         font-size: 1.2rem;
-        text-shadow: 0px -7px 10px rgba(0,0,0,0.83);
+        text-shadow: 0px -7px 10px rgba(0, 0, 0, 0.83);
         color: $text__white;
         text-shadow: -3px 2px 1px rgb(0 0 0 / 46%);
         font-family: 'Roboto Condensed', sans-serif;
@@ -76,43 +77,49 @@ h3 {
     -webkit-border-radius: 35px 35px 35px 0px;
     -moz-border-radius: 35px 35px 35px 0px;
     border: 8px outset #007e8c;
-    img{
+
+    img {
         padding: 10px;
     }
-    
+
 }
 
-.error404{
+.error404 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 5px auto;
     width: 80%;
-    p{
+
+    p {
         font-size: 2rem;
         text-shadow: -9px 4px 10px rgba(0, 0, 0, 0.83);
     }
-    img{
+
+    img {
         width: 100%;
     }
 }
+
 /*Termina index*/
 
 /* Breakpoint */
 
-@include medias (768px){
+@include medias (768px) {
 
-    .aside__style{
+    .aside__style {
         width: 80%;
         height: 60vh;
-        p{
+
+        p {
             font-size: 2rem;
             margin-top: 30px;
         }
     }
 
-    h2,h3{
+    h2,
+    h3 {
         font-size: 2.3rem;
         padding-bottom: 10px;
     }
@@ -121,11 +128,11 @@ h3 {
         width: 30%;
     }
 
-    .text__bold{
+    .text__bold {
         font-size: 1.4rem;
     }
 
-    .text__secondary{
+    .text__secondary {
         font-size: 1.2rem;
     }
 
@@ -133,36 +140,38 @@ h3 {
         width: 60%;
     }
 
-    .error404{
-        img{
+    .error404 {
+        img {
             width: 90%;
         }
     }
 }
 
-@include medias (992px){
+@include medias (992px) {
 
     .ofertas__card--size {
         width: 30%;
     }
 
-    .aside__style{
+    .aside__style {
         height: 40vh;
-        p{
+
+        p {
             font-size: 2.3rem;
             margin-top: 30px;
         }
     }
 
-    .error404{
+    .error404 {
         width: 65%;
-        p{
+
+        p {
             font-size: 2.3rem;
         }
     }
 }
 
-@include medias (1100px){
+@include medias (1100px) {
     .section__ofertas--img {
         width: 15%;
         height: 20%;
@@ -180,12 +189,12 @@ h3 {
         width: 20%;
     }
 
-    .error404{
+    .error404 {
         width: 55%;
     }
 }
 
-@include medias (1300px){
+@include medias (1300px) {
 
     .aside__style {
         height: 55vh;
@@ -199,38 +208,37 @@ h3 {
         padding-bottom: 10px;
     }
 
-    .error404{
+    .error404 {
         background-image: url(../imagenes/error404.jpg);
         height: 80vh;
         background-position: center;
         background-size: cover;
         justify-content: flex-start;
         width: 65%;
-        img{
+
+        img {
             display: none;
         }
-        p{
+
+        p {
             padding: 10px;
             text-shadow: -3px 2px 1px rgb(0 0 0 / 46%);
-    }
         }
     }
+}
 
-@include medias (1400px){
+@include medias (1400px) {
     .ofertas__card--size {
         width: 18%;
     }
 
-    .error404{
+    .error404 {
         width: 70%;
         height: 78vh;
     }
 
-    .aside__style{
+    .aside__style {
         width: 75%;
         height: 60vh;
     }
 }
-
-
-

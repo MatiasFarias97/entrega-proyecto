@@ -5,9 +5,9 @@
     max-width: 250px;
     padding: 0;
     margin: 20px auto 0 auto;
-  }
+}
 
-  .footer__content{
+.footer__content {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,12 +15,14 @@
     text-align: center;
     color: $text__white;
     padding-top: 40px;
-    h6{
+
+    h6 {
         font-size: 1.8rem;
         text-shadow: -3px 2px 1px rgb(0 0 0 / 46%);
         line-height: 3rem;
     }
-    p{
+
+    p {
         max-width: 500px;
         text-shadow: -3px 2px 1px rgb(0 0 0 / 46%);
         margin: 10px auto;
@@ -28,84 +30,95 @@
         font-size: 1rem;
         padding: 5px;
     }
-    img{
+
+    img {
         width: 70px;
         height: 70px;
     }
-  }
+}
 
-  .socials{
+.socials {
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 5px auto;
-    li{
-        
+
+    li {
+
         margin: 2px auto;
     }
-    a{
+
+    a {
         text-decoration: none;
         transition: 0.5s;
-        img{
-            &:hover{
+
+        img {
+            &:hover {
                 transform: scale(1.2);
-    
+
             }
         }
 
     }
-  }
-  
-  .footer__copyright{
+}
+
+.footer__copyright {
     width: 100%;
     text-align: center;
     color: $text__white;
-    p{
+
+    p {
         font-size: 1rem;
         word-spacing: 2px;
         text-shadow: -3px 2px 1px rgb(0 0 0 / 46%);
     }
-  }
+}
 
-@include medias (768px){
-    .pie-pagina{
-        p{
+@include medias (768px) {
+    .pie-pagina {
+        p {
             padding-left: 15px;
             text-align: center;
         }
     }
 
-    .linea{
+    .linea {
         max-width: 400px;
     }
 
 }
-@include medias (1100px){
-    .footer__style{
+
+@include medias (1100px) {
+    .footer__style {
         flex-wrap: nowrap;
         align-items: flex-start;
-        .footer__nosotros{
+
+        .footer__nosotros {
             width: 45%;
         }
-        .footer__siguenos{
+
+        .footer__siguenos {
             width: 45%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
         }
-        p{
+
+        p {
             font-size: 1rem;
         }
     }
-      
+
 }
-@include medias (1400px){
-    .linea{
+
+@include medias (1400px) {
+    .linea {
         max-width: 600px;
     }
-    .footer__style{
+
+    .footer__style {
         justify-content: center;
     }
 }

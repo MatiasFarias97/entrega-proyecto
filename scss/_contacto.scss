@@ -1,11 +1,11 @@
-/* Contacto */ 
-.container__flex{
+/* Contacto */
+.container__flex {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
 }
 
-.form{
+.form {
     width: 90%;
     max-width: 400px;
     border-radius: 1em;
@@ -14,25 +14,25 @@
     background-color: $filtros__boton;
 }
 
-.form__container{
+.form__container {
     width: 100%;
     display: grid;
     gap: 1em;
     grid-auto-columns: 100%;
 }
 
-.form__input{
+.form__input {
     font-size: 1rem;
     padding: 0.8em 1em;
 }
 
-.form__input--texto{
+.form__input--texto {
     resize: none;
     padding: 1.8em 1em;
     margin-bottom: .5em;
 }
 
-.btn__sumbit{
+.btn__sumbit {
     border: none;
     font-size: 1rem;
     padding: .7em 0;
@@ -40,7 +40,7 @@
     border-radius: .2em;
 }
 
-.section__mapa{
+.section__mapa {
     margin: 10px auto;
     width: 90%;
     max-width: 400px;
@@ -50,53 +50,53 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    h2{
+
+    h2 {
         margin: 10px auto;
         text-align: center;
     }
-    iframe{
+
+    iframe {
         padding: 0px 10px;
     }
 }
 
-@include medias (992px){
-    .section__mapa{
+@include medias (992px) {
+    .section__mapa {
         height: 56vh;
         padding-bottom: 10px;
         justify-content: space-around;
     }
 
-    iframe{
+    iframe {
         width: 100%;
         height: 100%;
     }
 }
 
-@include medias (1100px){
-    .container__flex{
+@include medias (1100px) {
+    .container__flex {
         flex-direction: row;
         margin-bottom: 200px;
     }
 
-    .form{
+    .form {
         width: 50%;
         height: 70vh;
     }
 
-    .section__mapa{
-        width: 50%; 
-        height: 70vh;   
+    .section__mapa {
+        width: 50%;
+        height: 70vh;
     }
 }
 
-@include medias (1400px){
-    .form{
+@include medias (1400px) {
+    .form {
         height: 60vh;
     }
 
-    .section__mapa{
+    .section__mapa {
         height: 60vh;
     }
 }
-
-

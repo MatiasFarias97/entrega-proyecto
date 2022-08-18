@@ -1,169 +1,175 @@
 /* Empieza productos de toda la pagina*/
-h1{
+h1 {
     @include titulos ($h1__bgcolor, 2rem, start, 10px 5px 5px 15px);
 }
 
-h4{
+h4 {
     font-size: 1.3rem;
 }
 
-.bg__secondnav{
+.bg__secondnav {
     background-color: $bg__filtros;
 }
 
-.bg__secondnav--label{
+.bg__secondnav--label {
     background-color: $filtros__color--label;
 }
 
-.boton__filtros{
+.boton__filtros {
     display: flex;
     font-size: 1.2rem;
     border-radius: 10px;
     padding: 5px 10px;
     background-color: $filtros__boton;
-    &:hover{
+
+    &:hover {
         background: $filtros__boton--hover;
     }
 }
 
-.p-4{
-    label{
+.p-4 {
+    label {
         margin-bottom: 5px;
         font-size: 1rem;
     }
 }
 
-.header__font{
+.header__font {
     font-family: 'Oswald', sans-serif;
 }
 
-.contenedor__articulos{
+.contenedor__articulos {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.card__productos{
+.card__productos {
     width: 45%;
     margin: 5px auto;
     padding: 10px;
     background: $card__productos--color;
-    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.75);
 
 }
 
-h5{
+h5 {
     font-weight: 400;
 }
 
-.contenedor__articulos{
-    div{
-        h5,p{
+.contenedor__articulos {
+    div {
+
+        h5,
+        p {
             margin: auto;
             text-align: center;
         }
-    }   
+    }
 }
 
-.contenedor__articulos{
-    div{
-        p{
+.contenedor__articulos {
+    div {
+        p {
             font-size: 1rem;
             font-weight: 300;
         }
     }
 }
 
-.filtros__1400px{
+.filtros__1400px {
     display: none;
-    label{
+
+    label {
         cursor: pointer;
     }
 }
 
 
-@include medias (768px){
-    h1{
+@include medias (768px) {
+    h1 {
         font-size: 2rem;
         padding-left: 15px;
     }
 
-    .card__productos{
+    .card__productos {
         width: 32%;
     }
 }
 
-@include medias (992px){
-    .bg_secondnav{
-        div{
+@include medias (992px) {
+    .bg_secondnav {
+        div {
             font-size: 1.8rem;
             padding-top: 10px;
         }
     }
 
-    h1{
+    h1 {
         padding-bottom: 10px;
     }
 
-    .card__productos{
+    .card__productos {
         width: 27%;
     }
 }
 
-@include medias (1200px){
-    .card__productos{
+@include medias (1200px) {
+    .card__productos {
         width: 23%;
     }
 }
 
-@include medias (1400px){
-    h1{
+@include medias (1400px) {
+    h1 {
         font-size: 2.4rem;
     }
 
-    .card__productos{
+    .card__productos {
         width: 23%;
     }
 
-    .contenedor__articulos{
+    .contenedor__articulos {
         column-gap: 5px;
-        div{
-            p{
+
+        div {
+            p {
                 font-size: 1.2rem;
             }
         }
     }
 
-    .filtros__1400px{
+    .filtros__1400px {
         display: block;
         padding: 5px 10px;
         font-size: 1.3rem;
         margin: 10px;
         background-color: $filtros__boton;
-        label{
+
+        label {
             margin: 15px;
         }
     }
 
-    .filtros__ocultar{
+    .filtros__ocultar {
         display: none;
     }
 
-    .grid__contenedor---body{
+    .grid__contenedor---body {
         display: grid;
         grid-template-columns: 30% 70%;
-        grid-template-areas: 
-        "filtros productos";
+        grid-template-areas:
+            "filtros productos";
     }
 
-    .grid__area--filtros{
+    .grid__area--filtros {
         grid-area: filtros;
 
     }
 
-    .grid__area--productos{
+    .grid__area--productos {
         grid-area: productos;
     }
 

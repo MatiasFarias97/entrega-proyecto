@@ -224,7 +224,8 @@ h3 {
     font-size: 2rem;
     margin-top: 30px;
   }
-  h2, h3 {
+  h2,
+h3 {
     font-size: 2.3rem;
     padding-bottom: 10px;
   }
@@ -381,7 +382,8 @@ h5 {
   font-weight: 400;
 }
 
-.contenedor__articulos div h5, .contenedor__articulos div p {
+.contenedor__articulos div h5,
+.contenedor__articulos div p {
   margin: auto;
   text-align: center;
 }
