@@ -31,11 +31,7 @@
         font-weight: 400;
         text-decoration: none;
         list-style: none;
-        transform: 0.5seg;
-
-        &:hover {
-            transform: scale(1.2);
-        }
+        
     }
 
     button {
@@ -135,7 +131,14 @@
 
     .nav__style {
         height: 20vh;
+        a{
+            transform: 0.5seg;
 
+        &:hover {
+            transform: scale(1.2);
+        }
+        }
+        
     }
 
 
